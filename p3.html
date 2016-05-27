@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+		<style>
+		.center {text-align: center;}
+		.button {
+			position: absolute;
+			top: 50%;
+		}
+		body{background-color:black;}
+		h1{color: white;}
+		p {color:white;}
+
+		.footer {
+		    background-color:white;
+		    color:black;
+		    clear:both;
+		    text-align:center;
+		    padding:5px; 
+		}
+		</style>
+
+
+		<script>
+		function myFunction() {
+		var x = Math.random();
+		//window.alert(x);
+		if (x <= 0.33){ document.getElementById("demo").innerHTML = ("Most Likely");}
+		else if (x < 0.66){ document.getElementById("demo").innerHTML = ("Ask Again");}
+		else if (x >= 0.66) {document.getElementById("demo").innerHTML = ("No");}
+		}
+		</script>
+
+</head>
+
+
+
+<body>
+		<h1 style="text-align:center;">The Magic 8 Ball Knows it All.</h1>
+		<p style="text-align:center;" id="demo">What is your fortune?</p>
+		<div class= "center"> <button type="button" onclick="myFunction()">Ask</button> </div>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<div class="footer"> <a href="http://franchescapena.github.io/index.html">Back To Home</a></div>
+</body>
+
+
+
+</html> 

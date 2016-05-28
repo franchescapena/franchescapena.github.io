@@ -1,3 +1,4 @@
+/* @pjs preload="bee.png","crown.png","lemonade.png", "lemon.png"; */
 PImage lem;  // Declare variable "a" of type PImage
 PImage bee;
 PImage crown;

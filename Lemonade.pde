@@ -42,7 +42,7 @@ void draw() {
   bxpos= mouseX;
   bypos= mouseY;
   if (bxpos <= 226 && bxpos > 216 && bypos <= 190 && bypos > 180) {
-    image(crown, 226, 180);
+    rainlem();
   }
 }
 

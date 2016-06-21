@@ -1,0 +1,61 @@
+<html>
+  <head>
+  <style>
+    #header {
+    background-color:black;
+    color:rgb(255,204,229);
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    width:100px;
+    height:415px;
+    float:left;
+    padding:5px; 
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:black;
+    color:rgb(255,204,229);
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+  </style>
+  </head>
+
+<body>
+  <div id="header">
+    <h1 style="text-align:center;"><font face="verdana">Project #100</font></h1>
+    </div>
+    
+  <div id="nav">
+    <a href="http://franchescapena.github.io/index.html">Home</a>
+  <br><a href="http://franchescapena.github.io/p2.html">Project #2</a></br>
+  <a href="http://franchescapena.github.io/p3.html">Project #3</a>
+  <br><a href="http://franchescapena.github.io/p4.html">Project #4</a></br>
+  </div>
+    
+<div id="section">
+<h2>Triangle Area - A Java Application</h2>
+<p> <a href="https://jenniferdewalt.com">This</a> Java application takes in data of (a) triangle(s) and returns the area of the triangle(s)</p>
+
+<h2>How it works</h2>
+<p>First, download the java application. Next.......</p>
+
+</div>
+
+<div id="section">
+<h2>Pictures will go here.</h2>
+</div>
+
+<div id="footer">Contact Me: <a href="mailto:fpenaaa@gmail.com" target="_top">fpenaaa@gmail.com</a></div>
+
+</body>
+</html>

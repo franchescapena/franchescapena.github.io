@@ -41,7 +41,7 @@ void draw() {
   image(bee, bxpos, bypos);
   bxpos= mouseX;
   bypos= mouseY;
-  if (bxpos <= 226 && bxpos > 216 && bypos <= 190 && bypos > 180) {
+  if (bxpos <= 226 && bxpos > 216 && bypos <= 190 && bypos > 175) {
     rainlem();
   }
 }
@@ -103,7 +103,7 @@ if (lypos5 == 510) {lypos5=10;}
 
   image(lem, 10, height/2, lem.width/2, lem.height/2);
   image(bee, bxpos, bypos);
-  image(crown, 217, 180);
+  image(crown, 220, 180);
   bxpos= mouseX;
   bypos= mouseY;
 }

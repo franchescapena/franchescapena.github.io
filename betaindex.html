@@ -24,19 +24,18 @@ body {
       margin:0; /* remove margins */
       border:0; /* remove borders */
 }
+.pad2 {
+display:block;
+height:100px; /* height to miss header and footer */
+}
     #header {
+    position: absolute;
+    right:18px;
+    z-index:1;
     background-color:black;
     color:rgb(255,204,229);
     text-align:center;
     padding:5px;
-}
-#nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    width:150px;
-    height:500px;
-    float:left;
-    padding:5px; 
 }
 
 #content { 
@@ -50,10 +49,13 @@ z-index:3; /* allocate a suitable z-index */
 }
 
 #footer {
+  position:absolute;
+  right:18px;
+   z-index:1;
     background-color:black;
     color:rgb(255,204,229);
     clear:both;
-    text-align:center;
+    text-align:right;
     padding:5px; 
 }
   </style>

@@ -7,28 +7,18 @@
     text-align:center;
     padding:5px;
 }
-#nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    width:100px;
-    height:1000px;
-    float:left;
-    padding:5px; 
-}
 #section {
-    width:700px;
+    width:800px;
     float:left;
     padding:10px; 
 }
 
-}
 #footer {
     background-color:black;
     color:rgb(255,204,229);
+    clear:both;
     text-align:center;
     padding:5px; 
-    position:relative;
-    clear:both;
 }
   </style>
   </head>
@@ -49,9 +39,7 @@
 
 <h2 style="text-align:center;">My Approach</h2>
 <p>I solved the challenge using Java. You can run my program with a string, sentence, and it will return the sentence with the correct spaces
-in between the words.</p>
-<h3 style="text-align:center;">A breakdown of the code</h3>
-<p>I start with three empty strings, test1 and test2 for testing substrings and finalString for the final output. First, I trace through the sentence, considering all the possible substrings for the first word. Next I test whether each substring is a word by checking if it is in the provided dictionary. Then comes a slight nuance. Next I check
+in between the words. I start with three empty strings, test1 and test2 for testing substrings and finalString for the final output. First, I trace through the sentence, considering all the possible substrings for the first word. Next I test whether each substring is a word by checking if it is in the provided dictionary. Then comes a slight nuance. Next I check
 if that word is a complete valid word or a smaller valid word within a larger valid word. Example: my code must not put a space after favor if the intended word is favorite. I do this by tracing through the remaining part of the sentence
 (the part after the substring being tested), if i can trace through this remaining string and not find another valid word then we have the case of a smaller valid within a larger valid word. Finally I check if the word is the last word of 
 the string. If all these conditions are met, I concat the substring plus " " to finalString. Once I have traced through the entire original sentence, I return finalString.
@@ -59,15 +47,15 @@ In order to test my method, I created, within the code, a List<String> with arbi
 Given that the method signature assumes we have a dictionary of all valid English words, I believe, if given that dictonary,
 my code and approach would work for any sentence input.</p>
 
-<h2 style="text-align:center;">Some Helpful Links</h2>
-<p><a href="http://introcs.cs.princeton.edu/java/15inout/mac-cmd.html">Java and the Mac OS X Terminal</a>
-  <br><a href="http://github.com/0nn0/terminal-mac-cheatsheet">Terminal Commands</a></br>
-</p>
-
 <h2 style="text-align:center;">How To Use My Code</h2>
 <p>First, download the java application by clicking here. Next, open terminal. Travel to the location containing the application (typically /Downloads). 
 Run the program using the command: 
 java google_challenge [INPUT HERE] where the input is the sentence without spaces.</p>
+
+<h2 style="text-align:center;">Some Helpful Links</h2>
+<p><a href="http://introcs.cs.princeton.edu/java/15inout/mac-cmd.html">Java and the Mac OS X Terminal</a>
+  <br><a href="http://github.com/0nn0/terminal-mac-cheatsheet">Terminal Commands</a></br>
+</p>
 </div>
 
 <div id="footer">Contact Me: <a href="mailto:fpenaaa@gmail.com" target="_top">fpenaaa@gmail.com</a></div>

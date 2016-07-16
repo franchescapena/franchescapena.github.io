@@ -1,0 +1,104 @@
+html {
+height:100%; /* fix height to 100% for IE */
+max-height:100%; /* fix height for other browsers */
+padding:0; /*remove padding */
+margin:0; /* remove margins */
+border:0; /* remove borders */
+background:#fff; /*color background - only works in IE */
+font-size:80%; /*set default font size */
+font-family:"trebuchet ms", tahoma, verdana, arial, sans-serif; /* set default font */
+/* hide overflow:hidden from IE5/Mac */
+/* \*/
+overflow:hidden; /*get rid of scroll bars in IE */
+/* */
+}
+
+body {
+height:100%; /* fix height to 100% for IE */
+max-height:100%; /* fix height for other browsers */
+overflow:hidden; /*get rid of scroll bars in IE */
+padding:0; /*remove padding */
+margin:0; /* remove margins */
+border:0; /* remove borders */
+}
+
+<html>
+  <head>
+  <style>
+    #header {
+    background-color:black;
+    color:rgb(255,204,229);
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    width:150px;
+    height:500px;
+    float:left;
+    padding:5px; 
+}
+
+#content { 
+display:block; /* set up as a block */
+height:100%; /* set height to full page */
+max-height:100%;
+overflow:auto; /* add scroll bars as required */
+padding-left:200px; /* pad left to avoid navigation div if required */
+position:relative; /* set up relative positioning so that z-index will work */
+z-index:3; /* allocate a suitable z-index */
+}
+
+#footer {
+    background-color:black;
+    color:rgb(255,204,229);
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+  </style>
+  </head>
+
+<body>
+  <div id="header">
+    <h1 style="text-align:center;"><font face="verdana">Project #100</font></h1>
+    </div>
+    
+  <div id="nav">
+    <a href="http://franchescapena.github.io/index.html">Home</a>
+  <br><a href="http://franchescapena.github.io/p2.html">P2: Coding? Getting the Kinks Out</a></br>
+  <a href="http://franchescapena.github.io/p3.html">P3: Javascript, Magic Eight Ball</a>
+  <br><a href="http://franchescapena.github.io/p4.html">P4: Processing, Ode to Queen B</a></br>
+    <a href="http://franchescapena.github.io/p5.html">P5: Java, An Area Calculator</a>
+  <br><a href="http://franchescapena.github.io/p6.html">P6, Java, Google Coding Challenge</a></br>
+  </div>
+    
+<div id="section">
+<h2>Introduction</h2>
+<p> Welcome! This summer I have set the goal of creating 100 mini coding projects. The project was inspired by Jennifer Dewalt's project
+which can be found <a href="https://jenniferdewalt.com">here</a></p>
+
+<h2>Why?</h2>
+<p>I am embarking on this project to practice the coding skills I already have and to learn new skills. 
+Further more, I believe this project will build my confidence in my coding ability and challenge me to stretch my creativity, which 
+I belive is just as essential to coding.</p>
+
+<p>Please feel free to check back on my progress. 
+<br></br>
+<i>Best, Franchesca.</i></p>
+</div>
+
+<div id="section">
+<h2>P1: Github, HTML, CSS // A Little About Myself</h2>
+<p>This introduction page serves as project #1 as I remind myself of basical html and CSS skills and familirize myself with github.
+My name is Franchesca Peña. I am 20 years old and live in New York. I am a rising junior studying computer science and English
+with a concentration in creative writing, so in addition to coding I also enjoy reading and writing. Running is one of my favorite hobbies
+and a big accoplishment this past year was completing a half marathon</p>
+
+</div>
+
+<div id="footer">Contact Me: <a href="mailto:fpenaaa@gmail.com" target="_top">fpenaaa@gmail.com</a></div>
+
+</body>
+</html>

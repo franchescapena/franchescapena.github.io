@@ -10,6 +10,10 @@ html, body {height: 100%;}
     #header {
     text-align:left;
     border-bottom: 2px solid red;
+    z-index:2;
+    position:absolute;
+    left: 0px;
+    top: 0px;
 }
 
 #content {
@@ -62,8 +66,8 @@ li a:hover {
 
 <body>
   <div id="wrapper">
+    <div id="header"><h1>Project #102</h1></div>
     <ul>
-  <li font-size:32px;>Project #0100</li>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>

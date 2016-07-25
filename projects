@@ -1,0 +1,92 @@
+<html>
+  <head>
+  <style>
+html, body {height: 100%;}
+
+  #wrapper {
+  min-height: 100%;
+  }
+  
+#content {
+    height:70%;
+    width:90%x;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    float:left;
+    padding:10px; 
+    margin-top:15px;
+    margin-bottom:15px;
+
+}
+#footer {
+  text-align:right;
+  border-top: 2px solid black;
+  padding-top:10px;
+  clear:both;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #white;
+    border-bottom: 2px solid black;
+}
+
+li {
+    float: right
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ffccff;
+}
+
+img {
+  margin:0px;
+  padding:0px;
+  max-width:100%;
+  height:auto;
+}
+</style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">About Me</a></li>
+  <li><a href="#contact">Projects</a></li>
+  <li><a href="#contact">More Learning</a></li>
+  <li><a href="#about">Resume</a></li>
+</ul>
+   
+<h1>Projects</h1>
+<p style="font-size:14px"> This summer I challenged myself to complete a series of small coding projects. The project was inspired by Jennifer Dewalt's project
+which can be found <a href="https://jenniferdewalt.com">here</a></p> </p>
+
+
+<p style="font-size:14px, text-align: center">
+  <a href="http://franchescapena.github.io/p2.html">Project #1: Ahh, Coding? Getting the Kinks Out</a><
+  <br><a href="http://franchescapena.github.io/index.html">Project #2: HTML & CSS, First Homepage</a></br>
+  <a href="http://franchescapena.github.io/p3.html">Project #3: Javascript, Magic Eight Ball</a>
+  <br><a href="http://franchescapena.github.io/p4.html">Project #4: Processing, Ode to Queen B</a></br>
+  <a href="http://franchescapena.github.io/p5.html">Project #5: Java, An Area Calculator</a>
+  <br><a href="http://franchescapena.github.io/p6.html">Project #6, Java, Google Coding Challenge</a></br>
+   <a href="http://franchescapena.github.io/p5.html">Project #7: HTML CSS, & Javascript, New Website Layout</a>
+</p>
+
+</div>
+
+<div id="footer">Contact Me: <a href="mailto:fpenaaa@gmail.com" target="_top">fpenaaa@gmail.com</a></div>
+
+</div>
+</body>
+</html>

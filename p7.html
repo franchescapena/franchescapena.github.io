@@ -1,0 +1,170 @@
+<html>
+  <head>
+  <style>
+html, body {height: 100%;}
+
+  #wrapper {
+  min-height: 100%;
+  }
+  
+#content {
+    height:75%;
+    width:100%x;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:15px;
+    margin-bottom:15px;
+    background-color:#DABCB2;
+
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+}
+#section2 {
+    width:350px;
+    float:left;
+    padding:10px; 
+    margin-left:70px;
+}
+#footer {
+  color:#8A733F;
+  text-align:right;
+  border-top: 2px solid #8A733F;
+  padding-top:10px;
+  padding-bottom:5px;
+  clear:both;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #white;
+    border-bottom: 2px solid #8A733F;
+}
+
+li {
+    float: right
+}
+
+li a {
+    display: block;
+    color: #8A733F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #9A7682;
+}
+
+img {
+  margin:0px;
+  padding:0px;
+  max-width:100%;
+  height:auto;
+}
+a {
+  color:black;
+}
+
+h1 {
+    color:#A86868;
+}
+h2 {
+  color:#A86868;
+}
+p {
+font-size:19px;
+}
+
+  </style>
+  
+<script>
+    var h1 = ["TO", " ", "BE", " ",  "PART", " ", "OF", " ", "A", " ", "CREATIVE", " ", "COMMONS",".",".","."]
+    var text = "";
+    var i = 0;
+    var id = setInterval (myMove, 70);
+    function myMove() {
+        if (i == h1.length){
+          clearInterval(id);
+        } else {
+          text+= h1[i];
+          document.getElementById("demo").innerHTML = text;
+          i++
+        }
+      }
+</script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+  <ul>
+  <li><a class="active" href="http://franchescapena.github.io/betaindex">Home</a></li>
+  <li><a href="http://franchescapena.github.io/about">About Me</a></li>
+  <li><a href="http://franchescapena.github.io/projects">Projects</a></li>
+  <li><a href="http://franchescapena.github.io/experience">Tech</a></li>
+  <li><a href="http://franchescapena.github.io/writing">Writing</a></li>
+  <li><a href="#about">Contact</a></li>
+</ul>
+   
+
+<div id="content">
+<div id="section">
+<h1>Document Analyzer</h1>
+<p> Welcome, the following code which can be found here or downloaded here is an SML code designed to analyze a body of text
+and out each unique word along with the number of times the word appears in the document.</p>
+
+<h1>My Approach</h1>
+<p>The code works with a typical dictionary structure, a key*value pair per entry. In this example, the key is the word and the value 
+is the number of times the word has appeared. The function, f(), runs through the document, inputted as a string list, checking if the 
+string is in the dictionary (hasKey()). If the string is present in the dictinary, the dictionary is updated (update()) by increasing the value 
+of the present key by 1. If the string is not present in the dictionary, the dictionary is updated by adding an entry with 
+the key as the string and the value as 1.</>
+
+<h1>How to Use My Code</h1>
+<p>Download the First, download the application by clicking here. 
+Next, open terminal. 
+Travel to the location containing the application (typically /Downloads). 
+Run the command: smlnj;
+Type: use "docanalyzer.sml" to tell shell which document to use. You will see some information about the program,
+inclduing functions and variables.
+Use the funcion f() which does the analyzing as you please. 
+Below is the spec for the function:
+<font color="green>SPEC: This method, f, takes in a doc : string list and a dictionary : (string * int) list, 
+and outputs a dictionary, [('word', word_count), ('word2', word2_count), etc.], such that it presents every unique word and its word count.  
+	When analyzing a document, doc, please run this method either with [] or the variable dict for the dicitonary type in order to recieve 
+	a correct analysis. For an example testing, RUN f(example,[]) or f(example,dict) 
+	<center>fun f (doc : string list, dictionary : dict) : (dict) = ...</center></font>
+	</p>
+	</div>
+	
+	<div id="section2">
+<h2>Some Visuals</h2>
+<p>Where to Find Terminal</p>
+<img src="termicon.png" alt="terminal icon" style="width:500px;height:350px;">
+<p>An Example of Running "docanalyzer.sml"</p>
+<img src="docanalyzerex.png" alt="terminal example" width="500" height="350">
+</div>
+
+</div>
+
+<div id="footer">
+  <a href="https://www.instagram.com/fran.chesca.pena/" target="_blank">
+  <img src="instagram.png" alt="insta" style="width:20px;height:20px;float:left;padding-right:5px">
+</a>
+<a href="https://www.showersandsteam.tumblr.com" target="_blank">
+  <img src="tumblr.png" alt="tumblr" style="width:20px;height:20px;float:left;">
+</a>
+  Contact Me: <a href="mailto:fpenaaa@gmail.com" target="_top">fpenaaa@gmail.com</a></div>
+
+</div>
+</body>
+</html>

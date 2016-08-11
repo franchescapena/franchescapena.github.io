@@ -1,6 +1,6 @@
 <html>
   <head>
-    <style>
+  <style>
 html, body {height: 100%;}
 
   #wrapper {
@@ -64,6 +64,9 @@ a {
 }
 
 h1 {
+    font-family: "Courier New", Courier, monospace;
+    max-width:100%;
+    height:auto;
     color:#A86868;
 }
 h2 {
@@ -72,21 +75,62 @@ h2 {
 p {
 font-size:19px;
 }
-</style>
+  </style>
+  
+<script>
+    var h1 = ["TO", " ", "BE", " ",  "PART", " ", "OF", " ", "A", " ", "CREATIVE", " ", "COMMONS",".",".","."]
+    var text = "";
+    var i = 0;
+    var id = setInterval (myMove, 70);
+    function myMove() {
+        if (i == h1.length){
+          clearInterval(id);
+        } else {
+          text+= h1[i];
+          document.getElementById("demo").innerHTML = text;
+          i++
+        }
+      }
+</script>
 </head>
 
 <body>
   <div id="wrapper">
-<ul>
+  <ul>
   <li><a class="active" href="http://franchescapena.github.io/">Home</a></li>
   <li><a href="http://franchescapena.github.io/about">About Me</a></li>
   <li><a href="http://franchescapena.github.io/projects">Projects</a></li>
   <li><a href="http://franchescapena.github.io/experience">Tech</a></li>
   <li><a href="#about">Contact</a></li>
 </ul>
- 
- <div id="content">  
- 
+   
+
+<div id="content">
+  
+  <i><h1 id="demo" style="font size:20px;"></h1></i>
+  <img src="writing.png" alt="journal" style="width:19%;height:250px; padding-right:10px;">
+  <img src="robot.png" alt="robot" style="width:19%;height:250px;padding-right:10px;">
+  <img src="book.png" alt="reading" style="width:19%;height:250px;padding-right:10px;">
+  <img src="whiteboard.png" alt="whiteboard" style="width:19%;height:250px;padding-right:10px;">
+  <img src="design.png" alt="design" style="width:19%;height:250px;">
+
+
+<h2>Introduction</h2>
+<p> Welcome to my site! My name is Franchesca Peña. I am junior studying computer science and English with a concentration in creative
+writing. This website started as a summer project to practice some coding (for more information, see the Projects tab) and has morphed 
+into a small portfolio that I hope showcases some of my skills, creativity, and personality. All code on the site is original unless
+otherwise stated.</p>
+
+<h2>Computer Science and Creative Writing?</h2>
+<p>Upon learning about my double major, people often ask me what made me want to study both computer science and English. Though the 
+two fields seemingly have little in common, I believe both have a foundation in this idea of a creative commons. In computer science, open source 
+software and technology is available to  users so that they can learn from it, use it, and maybe even improve it. In the discipline of 
+writing, language is a common culture that every author draws from and adds to in crafting their work. I am drawn
+to both fields because they encompass ideas that are important to my personal life in the work place: hard work, creativity, and community.  
+</p>
+<p>
+<i><b>Best,</b></i>
+<br><b><i>Franchesca</i></b></p>
 <h1>About Me</h1>
 <img src="me.png" alt="portrait" style="float:right; height:450px; padding:10px; margin-left:20px">
 <p style="font-size:19px;">
@@ -110,14 +154,13 @@ font-size:19px;
 </div>
 
 <div id="footer">
-    <a href="https://www.instagram.com/fran.chesca.pena/" target="_blank">
+  <a href="https://www.instagram.com/fran.chesca.pena/" target="_blank">
   <img src="instagram.png" alt="insta" style="width:20px;height:20px;float:left;padding-right:5px">
 </a>
 <a href="https://www.showersandsteam.tumblr.com" target="_blank">
   <img src="tumblr.png" alt="tumblr" style="width:20px;height:20px;float:left;">
 </a>
   Contact Me: <a href="mailto:fpenaaa@gmail.com" target="_top">fpenaaa@gmail.com</a></div>
-
 
 </div>
 </body>

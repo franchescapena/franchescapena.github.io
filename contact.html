@@ -51,22 +51,14 @@ li a {
 li a:hover {
     background-color: #9A7682;
 }
-
-img {
-  margin:0px;
-  padding:0px;
-  max-width:100%;
-  height:auto;
-}
-
-h1 {
-    color:#A86868;
-}
-h2 {
-  color:#A86868;
-}
 a {
   color:black;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
   </style>
 </head>
@@ -83,12 +75,14 @@ a {
 </ul>
  
  <div id="content">  
-<form action="action_page.php">
+<form action="MAILTO:fpena@wesleyan.edu">
+   <fieldset>
   Name:<br>
   <input type="text" name="name"><br>
   Message:<br>
   <input type="text" name="message"><br><br>
   <input type="submit" value="Submit">
+    </fieldset>
 </form>
 </div>
 

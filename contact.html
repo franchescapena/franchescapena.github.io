@@ -80,7 +80,7 @@ a {
  <div id="content" style="width:97%">  
  <br>
  <br>
-<form action="https://docs.google.com/a/wesleyan.edu/forms/d/e/1FAIpQLScoU6B4aOTnyYJVqAdtGViYJpIbum3Wy9ysBO2a1oFiGxA8Nw/formResponse" onsubmit="myFunction()" target="hidden_iframe" onsubmit="submitted=true;">
+<form action="https://docs.google.com/a/wesleyan.edu/forms/d/e/1FAIpQLScoU6B4aOTnyYJVqAdtGViYJpIbum3Wy9ysBO2a1oFiGxA8Nw/formResponse" onsubmit="myFunction()" target="hidden_iframe">
     <fieldset>
    Name:<br>
    <input type="text" name="entry.1560608511"><br>
@@ -91,7 +91,9 @@ a {
    <input type="submit" value="Submit">
      </fieldset>
  </form>
- <iframe name="hidden_iframe" id="hidden_iframe" src="franchescapena.github.io/thankyou.html" onload="if(submitted) {}"></iframe>
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+ <script>myFunction(){alert("Your message has been sent!");
+ submitted=true;}</script>
 </div>
 
 <div id="footer">

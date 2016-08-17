@@ -68,6 +68,13 @@ a {
 </head>
 
 <body>
+  <script src="assets/js/jquery.min.js">
+$(document).ready(function(){
+    $("form").submit(function(){
+        alert("Your Message Has Been Sumbitted!");
+    });
+});
+</script>
   <div id="wrapper">
 <ul>
   <li><a class="active" href="http://franchescapena.github.io/">Home</a></li>
@@ -92,13 +99,6 @@ a {
      </fieldset>
  </form>
  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
- <script src="assets/js/jquery.min.js">
-$(document).ready(function(){
-    $("form").submit(function(){
-        alert("Your Message Has Been Sumbitted!");
-    });
-});
-</script>
 </div>
 
 <div id="footer">

@@ -80,7 +80,7 @@ a {
  <div id="content" style="width:97%">  
  <br>
  <br>
-<form action="https://docs.google.com/a/wesleyan.edu/forms/d/e/1FAIpQLScoU6B4aOTnyYJVqAdtGViYJpIbum3Wy9ysBO2a1oFiGxA8Nw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+<form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/a/wesleyan.edu/forms/d/e/1FAIpQLScoU6B4aOTnyYJVqAdtGViYJpIbum3Wy9ysBO2a1oFiGxA8Nw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
     <fieldset>
    Name:<br>
    <input type="text" name="entry.1560608511"><br>
@@ -95,17 +95,14 @@ a {
  <script src="assets/js/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
-$('#form').on("submit", function(e) {
-  $('#form *').fadeOut(2000);
-  $('#form').prepend('Your submission has been processed!');
+$('#contactform').on("submit", function(e) {
+  $('#contactform *').fadeOut(2000);
+  $('#contactform').prepend('Your submission has been processed!');
   });
 </script>
 </div>
 
 <div id="footer">
-  <a href="mailto:fpena@wesleyan.edu" target="_blank">
-  <img src="mail.png" alt="email" style="width:20px;height:20px;float:left;padding-right:5px">
-</a>
   <a href="https://www.instagram.com/fran.chesca.pena/" target="_blank">
   <img src="instagram.png" alt="insta" style="width:20px;height:20px;float:left;padding-right:5px">
 </a>

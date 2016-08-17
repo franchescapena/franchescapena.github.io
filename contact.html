@@ -80,15 +80,26 @@ a {
  <div id="content" style="width:97%">  
  <br>
  <br>
-<form action="http://http://fpena-contact-form.herokuapp.com/">
+<form action="https://docs.google.com/forms/u/0/d/1PokxSB6o0cUt3r5cQiwKFcmF9_VoRkxZiW3e2mLxKlU/">
     <fieldset>
    Name:<br>
-   <input type="text" name="name"><br>
+   <input type="text" name="entry.193621957"><br>
+   E-mail:
+   <input type="text" name="entry.802647427"><br>
    Message:<br>
-   <input type="text" name="message" style="height:200px"><br><br>
+   <input type="text" name="entry.1834076937" style="height:200px"><br><br>
    <input type="submit" value="Submit">
      </fieldset>
  </form>
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+ <script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed!');
+  });
+</script>
 </div>
 
 <div id="footer">

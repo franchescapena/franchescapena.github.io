@@ -78,27 +78,19 @@ a {
 </ul>
  
  <div id="content" style="width:97%">  
- <h1>Testing, 6:12pm</h1>
+ <h1>Contact Me</h1>
  <br>
- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/a/wesleyan.edu/forms/d/e/1FAIpQLScoU6B4aOTnyYJVqAdtGViYJpIbum3Wy9ysBO2a1oFiGxA8Nw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+ <form action="https://formspree.io/fpena@wesleyan.edu" method="POST">
   Name:<br>
-  <input type="text" name="entry.1560608511" id="entry.1560608511"><br>
+  <input type="text" name="name">
   E-mail:<br>
-  <input type="text" name="entry.1903489693" id="entry.1903489693">
-  Message:<br>
-  <input type="text" name="entry.1711241488" id="entry.1711241488">
-  <input type="submit" value="Submit">
+    <input type="email" name="_replyto">
+  Message:
+    <input type ="text" name="message">
+    <input type="hidden" name="_next" value="franchescapena.github.io/thankyou.html" />
+    <input type="submit" value="Send">
 </form>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-<script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
 </div>
 
 <div id="footer">

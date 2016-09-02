@@ -56,24 +56,15 @@ until it finds a full word.</p>
 
 <p>When writing this program I originally thought I could preform the different tests by using recursion. However, I eventually figured
 out that that did not work. I then created three seperate test that rely on each other by boolean results. Test1 is true if test2 is true
-which is true if test3 is true. Another problem I ran into was implenting base cases, which in this case was </p>
+which is true if test3 is true. Another problem I ran into was implenting base cases, which in this case was checking if the 
+string each test recieved was empty or null. </p>
 
-
-
-
-You can run my program with a string, sentence, and it will return the sentence with the correct spaces
-in between the words. I start with three empty strings, test1 and test2 for testing substrings and finalString for the final output. First, I trace through the sentence, considering all the possible substrings for the first word. Next I test whether each substring is a word by checking if it is in the provided dictionary. Then comes a slight nuance. Next I check
-if that word is a complete valid word or a smaller valid word within a larger valid word. Example: my code must not put a space after favor if the intended word is favorite. I do this by tracing through the remaining part of the sentence
-(the part after the substring being tested), if i can trace through this remaining string and not find another valid word then we have the case of a smaller valid within a larger valid word. Finally I check if the word is the last word of 
-the string. If all these conditions are met, I concat the substring plus " " to finalString. Once I have traced through the entire original sentence, I return finalString.
-In order to test my method, I created, within the code, a List<String> with arbituuary English words.
-Given that the method signature assumes we have a dictionary of all valid English words, I believe, if given that dictonary,
-my code and approach would work for any sentence input.</p>
+<p>For a visual of this, click <a href="https://github.com/franchescapena/franchescapena.github.io/blob/master/google_challenge.java">here</a>
+to view the code. To see exactly how the test work, uncomment the System.out.println lines.
+</p>
 
 <h2 style="text-align:center;">How To Use My Code</h2>
-<p>First, download the java application by clicking <a href="franchescapena.github.io/google_challenge.class">here</a>.
-To view the code, click <a href="https://github.com/franchescapena/franchescapena.github.io/blob/master/google_challenge.java">here</a>.
-Next, open terminal. Travel to the location containing the application (typically /Downloads). 
+<p>First, download the java application by clicking <a href="franchescapena.github.io/google_challenge.class">here</a>. Next, open terminal. Travel to the location containing the application (typically /Downloads). 
 Run the program using the command: 
 java google_challenge [INPUT HERE] where the input is the sentence without spaces.</p>
 

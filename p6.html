@@ -45,7 +45,23 @@
 <img src="google_challenge.png" alt="terminal icon" style="width:800px;height:350px;">
 
 <h2 style="text-align:center;">My Approach</h2>
-<p>I solved the challenge using Java. You can run my program with a string, sentence, and it will return the sentence with the correct spaces
+<p>Though seemingly simple, this challenge took me several weeks to figure out. I solved the challenge using Java. The program works
+by running three tests. First it courses through the input string until it finds a word (test1). Then, in order to determine if 
+test1 is a full word, it courses through the remaining string until it finds another word (test2) (if it finds another word, then test 1 is a full word).
+What if, however, test2 is not really a full word but a word that is part of a bigger word? 
+Example: The word "favor" is actually part of the word "favorite".
+To account for this possible error, we run a third test, test3, which courses through the remaining part of the string after finding test2
+and checks if it can find a full word. If test3 cannot find a full word, test2 adds one more letter to its test word and continues this process
+until it finds a full word.</p>
+
+<p>When writing this program I originally thought I could preform the different tests by using recursion. However, I eventually figured
+out that that did not work. I then created three seperate test that rely on each other by boolean results. Test1 is true if test2 is true
+which is true if test3 is true. Another problem I ran into was implenting base cases, which in this case was </p>
+
+
+
+
+You can run my program with a string, sentence, and it will return the sentence with the correct spaces
 in between the words. I start with three empty strings, test1 and test2 for testing substrings and finalString for the final output. First, I trace through the sentence, considering all the possible substrings for the first word. Next I test whether each substring is a word by checking if it is in the provided dictionary. Then comes a slight nuance. Next I check
 if that word is a complete valid word or a smaller valid word within a larger valid word. Example: my code must not put a space after favor if the intended word is favorite. I do this by tracing through the remaining part of the sentence
 (the part after the substring being tested), if i can trace through this remaining string and not find another valid word then we have the case of a smaller valid within a larger valid word. Finally I check if the word is the last word of 
@@ -55,7 +71,9 @@ Given that the method signature assumes we have a dictionary of all valid Englis
 my code and approach would work for any sentence input.</p>
 
 <h2 style="text-align:center;">How To Use My Code</h2>
-<p>First, download the java application by clicking <a href="franchescapena.github.io/google_challenge.class">here</a>. Next, open terminal. Travel to the location containing the application (typically /Downloads). 
+<p>First, download the java application by clicking <a href="franchescapena.github.io/google_challenge.class">here</a>.
+To view the code, click <a href="https://github.com/franchescapena/franchescapena.github.io/blob/master/google_challenge.java">here</a>.
+Next, open terminal. Travel to the location containing the application (typically /Downloads). 
 Run the program using the command: 
 java google_challenge [INPUT HERE] where the input is the sentence without spaces.</p>
 

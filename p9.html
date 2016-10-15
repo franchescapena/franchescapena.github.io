@@ -1,0 +1,132 @@
+<html>
+  <head>
+  <style>
+html, body {height: 100%;}
+  #wrapper {
+  min-height: 100%;
+  }
+  
+#content {
+    height:75%;
+    width:100%x;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:15px;
+    margin-bottom:15px;
+    background-color:#DABCB2;
+}
+#footer {
+  color:#8A733F;
+  text-align:right;
+  border-top: 2px solid #8A733F;
+  padding-top:10px;
+  padding-bottom:5px;
+  clear:both;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #white;
+    border-bottom: 2px solid #8A733F;
+}
+li {
+    float: right
+}
+li a {
+    display: block;
+    color: #8A733F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #9A7682;
+}
+img {
+  margin:0px;
+  padding:0px;
+  max-width:100%;
+  height:auto;
+}
+a {
+  color:black;
+}
+h1 {
+    color:#A86868;
+}
+h2 {
+  color:#A86868;
+}
+p {
+font-size:19px;
+}
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+  <ul>
+  <li><a class="active" href="http://franchescapena.github.io/betaindex">Home</a></li>
+  <li><a href="http://franchescapena.github.io/about">About Me</a></li>
+  <li><a href="http://franchescapena.github.io/projects">Projects</a></li>
+  <li><a href="http://franchescapena.github.io/experience">Tech</a></li>
+  <li><a href="#about">Contact</a></li>
+</ul>
+   
+
+<div id="content">
+<h1> Client and Server, Python</h1>
+<p>For this project, I wanted to build upon what I am learning in my computer networks course so I looked to build programs that mimic 
+a client and a server. This projects involved an understanding of python, http requests, sockets, caches, web proxies,
+and client-server relationships.</p>
+
+<h1>My Approach & How It Works</h1>
+<p>There are two programs echo_client and echo_server. The client program forwards http get requests to the server, which is acting as a web proxy.
+The server receives the request. It checks if the url in the request is already in its cache. If it is, it will forward the request with an additonal
+'If-Modified-Since:' line. Based on the response it gets back from the web, it will either send back to the client a new response or the response it
+has stored in its cache. If the url is not in the cache, the server will forward the request unmodified. It will send back to the client
+</>
+
+<h1>How to Use My Code</h1>
+<p>Download the First, download the application by clicking here. 
+Next, open terminal. 
+Travel to the location containing the application (typically /Downloads). 
+Run the command: smlnj;
+Type: use "docanalyzer.sml" to tell shell which document to use. You will see some information about the program,
+inclduing functions and variables.
+Use the funcion f() which does the analyzing as you please. 
+Below is the spec for the function:
+<br><font color="green">SPEC: This method, f, takes in a doc : string list and a dictionary : (string * int) list, 
+and outputs a dictionary, [('word', word_count), ('word2', word2_count), etc.], such that it presents every unique word and its word count.  
+	When analyzing a document, doc, please run this method either with [] or the variable dict for the dicitonary type in order to recieve 
+	a correct analysis. For an example testing, RUN f(example,[]) or f(example,dict) 
+	<center>fun f (doc : string list, dictionary : dict) : (dict) = ...</center></font></br>
+	</p>
+
+<h1>Some Visuals</h1>
+<p>Where to find terminal:</p>
+<br>
+<img src="termicon.png" alt="terminal icon" style="width:650px;height:500px;margin:15px;">
+<p>An Eample of using "docanalyzer.sml":</p>
+<br>
+<img src="docanalyzerex.png" alt="terminal example" style="width:650px;height:500px;margin:15px">
+
+</div>
+
+<div id="footer">
+  <a href="https://www.instagram.com/fran.chesca.pena/" target="_blank">
+  <img src="instagram.png" alt="insta" style="width:20px;height:20px;float:left;padding-right:5px">
+</a>
+<a href="https://www.showersandsteam.tumblr.com" target="_blank">
+  <img src="tumblr.png" alt="tumblr" style="width:20px;height:20px;float:left;">
+</a>
+  Contact Me: <a href="mailto:fpenaaa@gmail.com" target="_top">fpenaaa@gmail.com</a></div>
+
+</div>
+</body>
+</html>

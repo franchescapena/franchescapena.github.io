@@ -1,7 +1,7 @@
 # Franchesca Pena 
 # 
 # A multi-threaded web proxy that receives http requests, connects to the internet
-# and echos back the response it received to the client. Based of Professor
+# and echos back the response it received to the client. Based off Professor
 # Manfredi's code for a simple echo server.
 #
 

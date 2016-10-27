@@ -1,7 +1,7 @@
 # Franchesca Pena
 #
 # A client that sends and recieves http requests and responses.
-# Based off of Professor Manfredi's echo client template.
+# Based off of Professor Manfredi's template for an echo client.
 #
 # Usage:
 #   python3 echo_client.py

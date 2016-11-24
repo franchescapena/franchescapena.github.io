@@ -86,7 +86,7 @@ a client and a server. This projects involved an understanding of python, http r
 and client-server relationships.</p>
 
 <h1>My Approach & How It Works</h1>
-<p>There are two programs echo_client and echo_server. The client program forwards http get requests to the server, which is acting as a web proxy.
+<p>There are two programs Client.py and Server.py. The client program forwards http get requests to the server, which is acting as a web proxy.
 The server receives the request. It checks if the url in the request is already in its cache. If it is, it will forward the request with an additonal
 'If-Modified-Since:' line. Based on the response it gets back from the web, it will either send back to the client a new response or the response it
 has stored in its cache. If the url is not in the cache, the server will forward the request unmodified. It will send back to the client the response
@@ -94,9 +94,9 @@ it receives from the web (we expect that that is a 200 OK message with an html m
 </>
 
 <h1>How to Use My Code</h1>
-<p>Download <a href="franchescapena.github.io/echo_server.py">echo_server</a> and <a href="franchescapena.github.io/echo_client.py">echo_client.</a> 
+<p>Download <a href="franchescapena.github.io/Server.py">echo_server</a> and <a href="franchescapena.github.io/Client.py">echo_client.</a> 
 Open two terminal windows. Travel to the location containing the application (typically /Downloads). 
-In one window, run the command: python3 echo_server.py This will open the server. In the next window run: pyhton3 echo_client.py
+In one window, run the command: python3 Server.py This will open the server. In the next window run: pyhton3 Client.py
 You will be prompted for the host and path of the website you want to visit.
 	  <h2>How to use your browser as a client</h2>
 	  <p>Open up a browser. I reccomend using Chrome. Change your proxy settings so that the broswer is listenig to

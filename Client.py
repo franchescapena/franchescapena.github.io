@@ -10,7 +10,7 @@
 import socket
 import sys
 
-class EchoClient():
+class Client():
     
         def __init__(self, server_host, server_port,request):
                 self.start(server_host, server_port,request)
@@ -73,7 +73,7 @@ def main():
     req=build_request(path,host)
                 
     # Create EchoClient object
-    client = EchoClient(server_host, server_port,req)
+    client = Client(server_host, server_port,req)
 
 if __name__ == '__main__':
     main()

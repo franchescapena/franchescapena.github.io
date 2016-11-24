@@ -32,7 +32,7 @@ class WebProxy():
         newrequest=('GET '+path+' HTTP/1.1\r\n'+'Host:'+host+'\r\n'+'Connection: close\r\nIf-Modified-Since:'+date+'\r\n\r\n')
         return newrequest
 
-class EchoServer():
+class Server():
 
     def __init__(self, server_host, server_port):
 
@@ -201,7 +201,7 @@ def main():
         server_port = int(sys.argv[2])
 
     # Create EchoServer object
-    server = EchoServer(server_host, server_port)
+    server = Server(server_host, server_port)
 
 if __name__ == '__main__':
     main()

@@ -5,7 +5,7 @@
 I have commented out some lines that were used for testing and developing. Please feel free to uncomment them to see exactly 
 how the program is working. 
 
-Code by Franchesca Pe–a
+Code by Franchesca Peâ€“a
 
 Usage: java googel_challenge
 

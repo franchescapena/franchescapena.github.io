@@ -1,8 +1,10 @@
 /* style_sheet.css*/
 
-body {height: 100%;}
+body {height: 100%;
+}
 
-wrapper {min-height: 100%;}
+wrapper {min-height: 100%;
+}
   
 content {
     height:75%;

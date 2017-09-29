@@ -1,10 +1,10 @@
-  #body {height: 100%;}
+/* style_sheet.css*/
 
-  #wrapper {
-  min-height: 100%;
-  }
+body {height: 100%;}
+
+wrapper {min-height: 100%;}
   
-#content {
+content {
     height:75%;
     min-width:100%x;
     overflow-x:hidden;
@@ -15,9 +15,9 @@
     margin-top:15px;
     margin-bottom:15px;
     background-color:#9fbfdf;
-
 }
-#footer {
+
+footer {
   color:#8A733F;
   text-align:right;
   border-top: 2px solid #8A733F;
@@ -25,6 +25,7 @@
   padding-bottom:5px;
   clear:both;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -56,6 +57,7 @@ img {
   max-width:100%;
   height:auto;
 }
+
 a {
   color:black;
 }
@@ -66,9 +68,11 @@ h1 {
     height:auto;
     color:#132639;
 }
+
 h2 {
   color:#132639;
 }
+
 p {
 font-size:19px;
 }
